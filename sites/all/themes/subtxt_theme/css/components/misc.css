@@ -1,4 +1,5 @@
 /**
+ * SUBTXT MOD INCLUDED
  * @file
  * SMACSS Modules
  *
@@ -284,7 +285,7 @@ a.tabs-secondary__tab-link {
   -moz-border-radius-topright: 4px;
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
-  text-shadow: 1px 1px 0 white;
+  /*text-shadow: 1px 1px 0 white; SUBTXT MOD - NO SHADOWS ON TEXT*/
   border: 1px solid #bbbbbb;
   border-bottom-color: transparent;
   /* IE 9 and earlier don't understand gradients. */
@@ -350,7 +351,7 @@ a.tabs-secondary__tab-link.is-active {
   -moz-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
-  text-shadow: 1px 1px 0 white;
+  /*text-shadow: 1px 1px 0 white; SUBTXT MOD - NO TEXT-SHADOWS*/
   background-color: #f2f2f2;
   color: #666;
   padding: 0 .5em;
@@ -363,7 +364,7 @@ a.tabs-secondary__tab-link:focus {
 }
 a.tabs-secondary__tab-link:active,
 a.tabs-secondary__tab-link.is-active {
-  text-shadow: 1px 1px 0 #333333;
+  /*text-shadow: 1px 1px 0 #333333; SUBTXT MOD - NO TEXT SHADOWS*/
   background-color: #666;
   border-color: #000;
   color: #fff;

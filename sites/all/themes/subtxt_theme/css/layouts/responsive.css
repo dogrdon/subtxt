@@ -1,4 +1,5 @@
 /**
+ * SUBTXT MOD INCLUDED
  * @file
  * Positioning for a responsive layout.
  *
@@ -64,7 +65,7 @@
 }
 
 /* Navigation bar */
-@media all and (min-width: 480px) {
+/*@media all and (min-width: 480px) { SUBTXT MOD - changed to keep nav bar up on top*/
   #main {
     /* Move all the children of #main down to make room. */
     padding-top: 3em;
@@ -77,7 +78,7 @@
     height: 3em;
     width: 100%;
   }
-}
+/*}*/
 
 /**
  * Use 3 grid columns for smaller screens.

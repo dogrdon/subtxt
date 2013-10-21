@@ -5,6 +5,23 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+ 
+ /* ==========================================================================
+    Colors:
+    ---from the planning commissioners guide - david j allor
+    #DD1846 = neon red
+    #276035 = dark green
+    #A0CABE = light green
+    
+    ---from the texteditor
+    #D23A54 = neon red
+    #AF0964 = fushcia
+    #B34264 = pink
+    #1C434E = dark green
+    #C4D3B4 = light green
+    #9EE22E = lime green
+    ========================================================================== */
+ 
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -22,6 +39,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
     font-family: helvetica, verdana, arial, sans-serif;
+    text-shadow: none; /* No text shadows! */ 
 }
 
 /*
@@ -84,31 +102,105 @@ textarea {
 }
 
 
-/* ==========================================================================
+/* =========================================================================
    Author's custom styles
    ========================================================================== */
+a{
+    text-decoration: none;
+}
+    
 
 #page{
     background-color: aliceblue;
 }
 
+
 #header {
     background-color:#fb4500;
+    box-shadow: 0px 10px 5px #888888;
 }
 
-#main-menu ul.links li{
+html, body {height: 100%;}
+
+#page {min-height: 100%;}
+
+
+
+article {
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+
+#content {min-height: 425px;}
+
+
+
+#main {overflow:auto;
+	padding-bottom: 150px;}  /* must be same height as the footer */
+
+#footer {
+    position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	clear:both;
+	background-color: #222;
+} 
+
+
+#footer h2.block-title{
+    color: antiquewhite;
+    font-size: 98%;
+}
+
+
+#footer ul.views-summary li {
+    list-style-type: none;
+    margin: -20px;
+}
+
+
+#footer ul.views-summary li {
+    color: antiquewhite;
+}
+
+#search-block-form {
+float: right;
+padding: 10px;
+}
+
+
+
+@media all and (max-width: 480px) { /* search bar in middle on mobile */
+    #search-block-form {
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+        
+    }
+}
+
+#main-menu ul.links li a{
 
     border-color:#333;
-    border-width: 0 1px 1px 1px;
+    border-width: 0 2px 2px 12px;
     border-style: solid;
     margin-left: 3px;
-    padding: 10px;
+    padding: 2px 10px 10px 10px;
+    background-color: #fff;
 
+}
+
+#main-menu ul.links li a:hover, #main-menu ul.links li a.active{
+    
+    border-color:#fb4500;
+    opacity: 1;
 }
 
 #secondary-menu ul.links li a{
 
-    color: yellow;
+    color: antiquewhite;
 
 }
 
@@ -118,8 +210,29 @@ a:hover   { opacity: 0.8 }  /* user hovers     */
 a:active  { color: #ccc }  /* active links    */
 
 
+/*TAG SECTION */
+
+.field-name-field-tags .field-items .field-item {
+    display: inline;
+
+}
+
+.field-name-field-tags .field-items .field-item a{
+    border: 1px solid #333;
+    padding: 0 15px;
+    margin: 0 5px;
+    background-color: antiquewhite;
+    color: #333;
+    text-decoration: none;
+}
+
+.field-name-field-tags .field-items .field-item a:hover;{
+    opacity: 0.8;
+}
 
 
+
+/* ABOUT SECTION */
 
 div#about-section div.soc-med {
   color: #aa5566;
@@ -140,6 +253,11 @@ div#about-section div.soc-med:hover{
   color: #ffeebb;
   background-color: #aa5566;
 }
+
+
+/* ZEN THEME OVERRIDES */
+
+
 
 
 
