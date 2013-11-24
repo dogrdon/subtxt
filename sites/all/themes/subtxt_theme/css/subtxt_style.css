@@ -112,6 +112,8 @@ a{
 
 #page{
     background-color: aliceblue;
+	min-height: 100%;
+	max-width: 100%;
 }
 
 
@@ -121,8 +123,6 @@ a{
 }
 
 html, body {height: 100%;}
-
-#page {min-height: 100%;}
 
 
 
@@ -166,8 +166,8 @@ article {
 }
 
 #search-block-form {
-float: right;
-padding: 10px;
+	float: right;
+	padding: 10px;
 }
 
 
@@ -235,27 +235,34 @@ a:active  { color: #ccc }  /* active links    */
 /* ABOUT SECTION */
 
 div#about-section div.soc-med {
-  color: #aa5566;
-  background-color: #ffeebb;
-  padding: 10px;
-  border: 1px solid #665555;
-  font-weight: bold;
-  display: inline-block;
-  margin: 5px;
-  min-width: 50px;
-  font-size: 1.3em;
-  text-align: center;
-  cursor: pointer;
+    color: #aa5566;
+    background-color: #ffeebb;
+    padding: 10px;
+    border: 1px solid #665555;
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px;
+    min-width: 50px;
+    font-size: 1.3em;
+    text-align: center;
+    cursor: pointer;
 
 }
 
 div#about-section div.soc-med:hover{
-  color: #ffeebb;
-  background-color: #aa5566;
+    color: #ffeebb;
+    background-color: #aa5566;
 }
 
 
 /* ZEN THEME OVERRIDES */
+
+/* GENERAL LAYOUT */
+
+.field.field-name-body {
+	float: left;
+	width: 70%;
+}
 
 
 
