@@ -1,0 +1,26 @@
+<?php 
+/**
+ *@file
+ *Helps people see some stuff on their site
+ */
+
+/**
+* Implements hook to alter form from drupal core
+*/
+
+function fantsy_form_alter(&$form, &$form_state, $form_id){
+	$form['fantsy_display_form_id'] = array(
+		'#type' => 'item',
+		'#title' => t('This form is'),
+		'#markup' => $form_id,
+		'#weight' => -100,
+	
+	);
+
+}
+
+function fantsy_help($path, $arg){
+	if ($path == 'user/'){
+		return t('This is your mind calling');
+	}
+}

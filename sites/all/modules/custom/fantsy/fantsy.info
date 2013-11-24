@@ -1,0 +1,5 @@
+name = Fantsy Pants Module
+description = This is one fantsy pants module to store all your data in and pull it out using a hot new programming language called Fist
+package = Development
+dependencies[] = help
+core = 7.x
